@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable prettier/prettier */
 import {useState} from 'react';
 import {Platform, Pressable, StyleSheet, Text, View} from 'react-native';
+import {PrimaryButton} from '../components';
 
 export const CounterScreen = () => {
   const [count, setCount] = useState<number>(12);
@@ -12,12 +14,16 @@ export const CounterScreen = () => {
     <View style={styles.container}>
       <Text style={styles.title}>{count} </Text>
 
-      <Pressable
+      <PrimaryButton
+        label="counter"
+        onPress={() => incrementBy(+1)}
+        onLonPress={() => setCount(0)}></PrimaryButton>
+      {/* <Pressable
         onPress={() => incrementBy(+1)}
         onLongPress={() => setCount(0)}
         style={({pressed}) => [styles.button, pressed && styles.buttonPressed]}>
         <Text style={{color: 'white'}}>+1</Text>
-      </Pressable>
+      </Pressable> */}
     </View>
   );
 };
@@ -32,14 +38,5 @@ const styles = StyleSheet.create({
     fontSize: 80,
     color: 'black',
     fontWeight: '300',
-  },
-  button: {
-    backgroundColor: Platform.OS === 'android' ? '#5856D6' : 'white',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 10,
-  },
-  buttonPressed: {
-    backgroundColor: Platform.OS === 'android' ? '#4746AB' : 'white',
   },
 });
