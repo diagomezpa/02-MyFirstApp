@@ -1,7 +1,8 @@
+/* eslint-disable prettier/prettier */
 import {SafeAreaView} from 'react-native';
 import {PaperProvider} from 'react-native-paper';
 import IonIcon from 'react-native-vector-icons/Ionicons';
-import {DimensionScreen} from './src/presemtation/screens/DimensionScreen';
+import {PositionScreen} from './src/presemtation/screens/PositionScreen';
 export const App = () => {
   return (
     <PaperProvider settings={{icon: props => <IonIcon {...props} />}}>
@@ -11,7 +12,8 @@ export const App = () => {
         <CounterScreen></CounterScreen> */}
         {/* <CounterM3Screen></CounterM3Screen> */}
         {/* <BoxObjectModelScreen /> */}
-        <DimensionScreen />
+        {/* <DimensionScreen /> */}
+        <PositionScreen />
       </SafeAreaView>
     </PaperProvider>
   );
