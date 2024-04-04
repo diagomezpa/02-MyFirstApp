@@ -1,7 +1,7 @@
 import {SafeAreaView} from 'react-native';
 import {PaperProvider} from 'react-native-paper';
 import IonIcon from 'react-native-vector-icons/Ionicons';
-import {BoxObjectModelScreen} from './src/presemtation/screens/BoxObjectModelScreen';
+import {DimensionScreen} from './src/presemtation/screens/DimensionScreen';
 export const App = () => {
   return (
     <PaperProvider settings={{icon: props => <IonIcon {...props} />}}>
@@ -10,7 +10,8 @@ export const App = () => {
         {/* <HelloworldScreen name="Diego Gomez" />
         <CounterScreen></CounterScreen> */}
         {/* <CounterM3Screen></CounterM3Screen> */}
-        <BoxObjectModelScreen />
+        {/* <BoxObjectModelScreen /> */}
+        <DimensionScreen />
       </SafeAreaView>
     </PaperProvider>
   );
