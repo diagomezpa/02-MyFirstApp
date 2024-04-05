@@ -16,25 +16,26 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#28425B',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    //alignItems: 'center',
+    //flexDirection: 'row',
   },
   box: {
-    width: 100,
-    height: 100,
+    //width: 100,
+    //height: 100,
     borderWidth: 10,
     borderColor: 'white',
   },
   purpleBox: {
     backgroundColor: '#5856d6',
-    alignSelf: 'flex-end',
+    flex: 2,
   },
   orangeBox: {
     backgroundColor: '#F0A23B',
-    //flex: 1,
+    flex: 2,
     //alignSelf: 'flex-end',
   },
   blueBox: {
     backgroundColor: '#28C4D9',
-    alignSelf: 'flex-start',
+    flex: 4,
   },
 });
