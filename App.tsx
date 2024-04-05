@@ -2,7 +2,7 @@
 import {SafeAreaView} from 'react-native';
 import {PaperProvider} from 'react-native-paper';
 import IonIcon from 'react-native-vector-icons/Ionicons';
-import {PositionScreen} from './src/presemtation/screens/PositionScreen';
+import {FlexScreen} from './src/presemtation/screens/FlexScreen';
 export const App = () => {
   return (
     <PaperProvider settings={{icon: props => <IonIcon {...props} />}}>
@@ -13,7 +13,8 @@ export const App = () => {
         {/* <CounterM3Screen></CounterM3Screen> */}
         {/* <BoxObjectModelScreen /> */}
         {/* <DimensionScreen /> */}
-        <PositionScreen />
+        {/* <PositionScreen /> */}
+        <FlexScreen />
       </SafeAreaView>
     </PaperProvider>
   );
