@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     //backgroundColor: 'gray',
     justifyContent: 'space-between',
 
-    alignItems: 'center',
+    alignItems: 'stretch',
     flexDirection: 'row',
   },
   box: {
@@ -27,13 +27,11 @@ const styles = StyleSheet.create({
   },
   box1: {
     backgroundColor: '#5856d6',
-    top: -100,
   },
   box2: {
     backgroundColor: '#4240a2',
   },
   box3: {
     backgroundColor: '#2e2d71',
-    top: 100,
   },
 });
