@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
   },
   orangeBox: {
     backgroundColor: '#F0A23B',
+    right: -100,
 
     //alignSelf: 'flex-end',
   },
