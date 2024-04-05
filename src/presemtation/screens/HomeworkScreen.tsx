@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   },
   purpleBox: {
     backgroundColor: '#5856d6',
+    alignSelf: 'flex-end',
   },
   orangeBox: {
     backgroundColor: '#F0A23B',
@@ -33,6 +34,6 @@ const styles = StyleSheet.create({
   },
   blueBox: {
     backgroundColor: '#28C4D9',
-    width: '100%',
+    alignSelf: 'center',
   },
 });
