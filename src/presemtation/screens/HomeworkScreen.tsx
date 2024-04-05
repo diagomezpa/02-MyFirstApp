@@ -24,12 +24,15 @@ const styles = StyleSheet.create({
   },
   purpleBox: {
     backgroundColor: '#5856d6',
+    flex: 1,
   },
   orangeBox: {
     backgroundColor: '#F0A23B',
+    flex: 3,
     //alignSelf: 'flex-end',
   },
   blueBox: {
     backgroundColor: '#28C4D9',
+    flex: 1,
   },
 });
